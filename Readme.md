@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Janus Pater](https://up.htmlacademy.ru/htmlcss/23/user/161913).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Забара](https://htmlacademy.ru/profile/lena___elena).
 
 ---
 
