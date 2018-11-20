@@ -21,18 +21,19 @@
       <li><a href="#">Корзина</a></li>
     </ul>
     <ul class="site-navigation">
-      <li><button type='button'>Каталог товаров</button></li>
+      <li>Каталог товаров
+        <ul class="catalog-menu">
+          <li><a href="#">Виртуальная реальность</a></li>
+          <li><a href="./catalog.html">Моноподы для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+          <li><a href="#">Фитнес-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
+      </li>
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Гарантия</a></li>
       <li><a href="#">Контакты</a></li>
-    </ul>
-    <ul class="catalog-menu">
-      <li><a href='#'>Виртуальная реальность</a></li>
-      <li><a href='#'>Моноподы для селфи</a></li>
-      <li><a href='#'>Экшн-камеры</a></li>
-      <li><a href='#'>Фитнес-браслеты</a></li>
-      <li><a href='#'>Умные часы</a></li>
-      <li><a href='#'>Квадрокоптеры</a></li>
     </ul>
   </nav>
   <main class="container">
@@ -44,7 +45,7 @@
         <ol class="catalog-navigation">
           <li><a href="#">Главная</a></li>
           <li><a href="#">Каталог товаров</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a>Моноподы для селфи</a></li>
         </ol>
       </nav>
       <section class="filters">
@@ -80,32 +81,32 @@
         <h3 class="visually-hidden">Товары</h3>
         <div>
           <img src="http://via.placeholder.com/360x380" alt="product">
-          <p><a href="#">Любительская селфи-палка</a></p>
+          <a href="#">Любительская селфи-палка</a>
           <p>500 руб.</p>
         </div>
         <div>
           <img src="http://via.placeholder.com/360x380" alt="product">
-          <p><a href="#">Профессиональная селфи-палка</a></p>
+          <a href="#">Профессиональная селфи-палка</a>
           <p>1 500 руб.</p>
         </div>
         <div>
           <img src="http://via.placeholder.com/360x380" alt="product">
-          <p><a href="#">Непотопляемая селфи-палка</a></p>
+          <a href="#">Непотопляемая селфи-палка</a>
           <p>2 500 руб.</p>
         </div>
         <div>
           <img src="http://via.placeholder.com/360x380" alt="product">
-          <p><a href="#">Селфи-палка «Следуй за мной»</a></p>
+          <a href="#">Селфи-палка «Следуй за мной»</a>
           <p>4 900 руб.</p>
         </div>
         <nav>
-          <ol>
+          <ul>
             <li> <a href="#">Назад</a></li>
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">Вперед</a></li>
-          </ol>
+          </ul>
         </nav>
       </section>
     </section>
@@ -119,19 +120,20 @@
     </p>
     <!-- site-search -->
     <ul class="user-navigation">
-      <li>Войти</li>
+      <li><a href="#">Валентин Петухов</a></li>
+      <li><a href="#">Выйти</a></li>
     </ul>
     <ul class="site-features">
-      <li>Сравнить</li>
-      <li>Корзина</li>
+      <li><a href="#">Сравнить</a></li>
+      <li><a href="#">Корзина</a></li>
     </ul>
     <ul class="site-navigation">
-      <li class="catalog"></li>
-      <li>Доставка</li>
-      <li>Гарантия</li>
-      <li>Контакты</li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Гарантия</a></li>
+      <li><a href="#">Контакты</a></li>
     </ul>
-    <div class="footer-social">
+    <section class="footer-social">
+      <h2 class='visually-hidden'>Мы в соцсетях</h2>
       <ul>
         <li>
           <a class="social-button" href="#">Facebook</a>
@@ -143,10 +145,13 @@
           <a class="social-button" href="#">Twitter</a>
         </li>
       </ul>
-    </div>
-    <div class="footer-copyright">
-      <img src="http://via.placeholder.com/27x35" alt="html academy">
-    </div>
+    </section>
+    <section class="footer-copyright">
+      <h2 class="visually-hidden">Копирайт</h2>
+      <a href='https://htmlacademy.ru/intensive/htmlcss'>
+        <img src="http://via.placeholder.com/27x35" alt="html academy">
+      </a>
+    </section>
   </footer>
 </body>
 </html>
