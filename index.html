@@ -12,7 +12,10 @@
 			<a class="main-header-logo">
 				<img src="img/logo.svg" alt="logo">
       </a>
-      <!-- site-search -->
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <label for="search" class="visually-hidden">Поиск по сайту</label>
+        <input type='search' name="search" id="search"/>
+      </form>
       <ul class="user-navigation">
         <li><a href="#">Войти</a></li>
       </ul>
@@ -237,6 +240,15 @@
     <section class="modal contact-form">
       <h2 class="visually-hidden">Свяжитесь с нами</h2>
       <span class="modal-close">X</span>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="mail_name">Ваше имя:</label>
+        <input type='text' name="name" placeholder="Имя Фамилия" id="mail_name">
+        <label for="mail_email">Ваш e-mail:</label>
+        <input type='email' name="email" placeholder="email@example.com" id="mail_email">
+        <label for="mail_text">Текст письма:</label>
+        <textarea placeholder='В свободной форме' name="text" id="mail_text"></textarea>
+        <button type='submit'>Отправить</button>
+      </form>
     </section>
   </main>
   <footer class="main-footer">
