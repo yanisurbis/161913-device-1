@@ -264,6 +264,10 @@ header .site-navigation a {
 
 /* product */
 
+.featured-products {
+  margin-bottom: 106px;
+}
+
 .product {
   display: flex;
 }
@@ -327,6 +331,10 @@ header .site-navigation a {
 
 /* categories */
 
+.categories {
+  margin-bottom: 84px;
+}
+
 .categories ul {
   display: flex;
   justify-content: space-between;
@@ -389,6 +397,7 @@ header .site-navigation a {
 
 .services {
   display: flex;
+  margin-bottom: 94px;
 }
 
 .services ul {
@@ -426,6 +435,10 @@ header .site-navigation a {
 
 /* brands  */
 
+.brands {
+  margin-bottom: 93px;
+}
+
 .brands ul {
   display: flex;
   justify-content: space-between;
@@ -443,53 +456,54 @@ header .site-navigation a {
   opacity: 0.2;
 }
 
-/* about us */
+/* about us & contacts */
 
-.about-us h2 {
-  font-family: GilroyBold;
-  font-size: 47.5px;
+.about-us-and-contacts-wrapper {
+  margin: 0 -60px 90px;
 }
 
-.about-us p {
+.about-us, .contacts {
+  margin: 0 60px;
+}
+
+.about-us::before, .contacts::before {
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: var(--black1);
+  display: block;
+}
+
+.about-us h2, .contacts h2 {
+  font-family: GilroyBold;
+  font-size: 47.5px;
+  line-height: 1.02;
+}
+
+.about-us .device-btn, .contacts .device-btn {
+  margin-top: 80px;
+}
+
+.about-us p, .contacts p {
   font-family: var(--open-sans);
   font-size: 15px;
   margin-bottom: 44px;
+  line-height: 30px;
 }
 
 .about-us ul {
+  margin-top: 70px;
   list-style-type: circle;
   font-family: var(--gilroy);
   padding-left: 20px;
-  margin-bottom: 130px;
 }
 
 .about-us li:not(:last-child) {
   margin-bottom: 20px;
 }
 
-/* contacts */
-
-.contacts h2 {
-  font-family: GilroyBold;
-  font-size: 47.5px;
-}
-
-.contacts p {
-  font-family: var(--open-sans);
-  font-size: 15px;
-}
-
-.contacts p {
-  margin-bottom: 44px;
-}
-
 .contacts .map {
   display: block;
-  margin-bottom: 82px;
-}
-
-.contacts .device-btn {
-  margin-bottom: 98px;
 }
 
 /* modals  */
@@ -508,6 +522,22 @@ footer {
 footer > div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+footer > div:first-child {
+  margin-bottom: 50px;
+}
+
+footer > div:nth-child(2) {
+  margin-bottom: 70px;
+}
+
+footer > div:nth-child(3)::before {
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: var(--yellow1);
 }
 
 footer ul {
