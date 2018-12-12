@@ -166,6 +166,20 @@ header {
   width: 1160px;
 }
 
+/* logo */
+
+header .main-header-logo {
+  display: inline-block;
+}
+
+header .main-header-logo:hover {
+  opacity: 0.6;
+}
+
+header .main-header-logo:focus {
+  opacity: 0.3;
+}
+
 /* catalog */
 
 .catalog li {
