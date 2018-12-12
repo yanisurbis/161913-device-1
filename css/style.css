@@ -104,7 +104,7 @@ a:hover, a:focus {
 }
 
 .device-btn1:active::before {
-  width: 278px;
+  width: 270px;
   background: var(--black1);
 }
 
@@ -406,8 +406,21 @@ header .site-navigation a {
 
 .services {
   display: flex;
-  margin-bottom: 94px;
+  margin-bottom: 120px;
+  position: relative;
 }
+
+.services::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 95px;
+  width: 1440px;
+  margin-left: -140px;
+  height: 288px;
+  background: var(--grey2);
+  z-index: -1;
+} 
 
 .services ul {
   width: 275px;
@@ -416,6 +429,10 @@ header .site-navigation a {
   flex-direction: column;
   justify-content: center;
   border-right: 7px solid var(--black1);
+}
+
+.services li:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .services .service {
@@ -440,6 +457,7 @@ header .site-navigation a {
   width: 426px;
   color: var(--brown1);
   line-height: 2;
+  margin: 0;
 }
 
 /* brands  */
