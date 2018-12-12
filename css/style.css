@@ -158,8 +158,21 @@ a:hover, a:focus {
 /* header */
 
 header {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   width: 1160px;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background: var(--yellow1);
+  height: 299px;
+  top: 20px;
 }
 
 .landing {
