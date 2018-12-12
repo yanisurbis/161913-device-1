@@ -207,6 +207,14 @@ header .main-header-logo:focus {
   opacity: 0.3;
 }
 
+.site-navigation > ul a,
+.site-navigation .catalog {
+  font-family: var(--gilroy);
+  text-transform: uppercase;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+}
+
 .catalog li {
   margin-bottom: 20px;
   margin-right: 50px;
@@ -215,6 +223,8 @@ header .main-header-logo:focus {
 .catalog .catalog-menu a {
   font-size: 15px;
   font-family: var(--open-sans);
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .catalog .catalog-menu {
