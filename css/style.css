@@ -567,6 +567,9 @@ footer ul {
 
 .footer-contacts, .footer-tel-number {
   color: var(--white1);
+  font-family: var(--open-sans);
+  font-size: 15px;
+  line-height: 2;
 }
 
 .footer-logo:hover {
