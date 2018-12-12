@@ -563,6 +563,7 @@ footer ul {
   font-family: var(--gilroy);
   line-height: 1.33;
   letter-spacing: 3.6px;
+  text-transform: uppercase;
   color: var(--white1);
   font-size: 18px;
 }
