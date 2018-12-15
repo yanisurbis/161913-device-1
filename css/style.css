@@ -158,9 +158,12 @@ a:hover, a:focus {
 /* header */
 
 header {
-  margin-bottom: 20px;
   width: 1160px;
   position: relative;
+}
+
+header nav {
+  padding: 66px 60px 0px;
 }
 
 header::before {
@@ -169,8 +172,7 @@ header::before {
   position: absolute;
   width: 100%;
   z-index: -1;
-  opacity: 0.5;
-  background: var(--yellow1);
+  background: #FCE09B;
   height: 299px;
   top: 20px;
 }
@@ -183,6 +185,8 @@ header::before {
 
 header .main-header-logo {
   display: inline-block;
+  position: absolute;
+  top: 3px;
 }
 
 header .main-header-logo:hover {
@@ -216,7 +220,7 @@ header .main-header-logo:focus {
 }
 
 .catalog li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-right: 50px;
 }
 
@@ -227,13 +231,45 @@ header .main-header-logo:focus {
   letter-spacing: normal;
 }
 
-.catalog .catalog-menu {
+.catalog .catalog-menu-wrapper {
   display: none;
 }
 
-.catalog:hover .catalog-menu {
+.catalog:hover .catalog-menu-wrapper,
+.catalog-menu-wrapper:hover .catalog-menu-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.catalog-menu-wrapper {
+  background-color: #FCE09B;
+  padding: 25px 0px 20px;
+  width: 200%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 150px;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 23px;
+  z-index: 2;
+}
+
+.catalog {
+  position: relative;
+}
+
+.catalog-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.catalog-menu li:last-child {
+  position: absolute;
+  top: 25px;
+  left: 405px;
 }
 
 /*  */
@@ -291,7 +327,7 @@ header .site-navigation a {
 }
 
 .site-features li:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 70px;
 }
 
 /* product */
@@ -326,11 +362,12 @@ header .site-navigation a {
   text-align: right;
   position: absolute;
   color: white;
-  right: 20px;
+  right: 50px;
   top: -25px;
 }
 
 .product .slogan {
+  display: block;
   font-size: 47px;
   font-family: var(--gilroy);
   color: var(--black1);
