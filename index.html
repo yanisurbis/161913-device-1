@@ -21,11 +21,11 @@
         </form>
         <div class="w-50 flex justify-between">
           <ul class="user-navigation">
-            <li><a href="#">Войти</a></li>
+            <li><a href="#" class="signin">Войти</a></li>
           </ul>
           <ul class="site-features flex">
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
+            <li><a href="#" class="compare">Сравнить</a></li>
+            <li><a href="#" class="basket">Корзина</a></li>
           </ul>
         </div>
       </div>
@@ -249,38 +249,42 @@
       <section class="contacts w-50">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href='#' class="map">
+        <button class="map">
           <img src="img/map.jpg" alt="карта с отметкой, где мы находимся">
-        </a>
-        <button class="device-btn" type="button">Напишите нам</button>
+        </button>
+        <button class="device-btn" type="button" id="contact-us">Напишите нам</button>
       </section>
     </div>
-    <section class="modal map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <button class="modal-close">
-        <span class="visually-hidden">Закрыть модальное окно</span>
-      </button>
+    <section class="modal map hidden">
+      <div class="modal-content">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <button class="modal-close">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+      </div>
     </section>
-    <section class="modal contact-form">
-      <h2 class="visually-hidden">Свяжитесь с нами</h2>
-      <button class="modal-close">
-        <span class="visually-hidden">Закрыть модальное окно</span>
-      </button>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div>
-          <label for="mail_name">Ваше имя:</label>
-          <input type="text" name="name" placeholder="Имя Фамилия" id="mail_name">
-        </div>
-        <div>
-          <label for="mail_email">Ваш e-mail:</label>
-          <input type="email" name="email" placeholder="email@example.com" id="mail_email">
-        </div>
-        <div>
-          <label for="mail_text">Текст письма:</label>
-          <textarea placeholder='В свободной форме' name="text" id="mail_text"></textarea>
-        </div>
-        <button class="device-btn" type="submit">Отправить</button>
-      </form>
+    <section class="modal contact-form hidden">
+      <div class="modal-content">
+        <h2 class="visually-hidden">Свяжитесь с нами</h2>
+        <button class="modal-close">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div>
+            <label for="mail_name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Имя Фамилия" id="mail_name">
+          </div>
+          <div>
+            <label for="mail_email">Ваш e-mail:</label>
+            <input type="email" name="email" placeholder="email@example.com" id="mail_email">
+          </div>
+          <div>
+            <label for="mail_text">Текст письма:</label>
+            <textarea placeholder='В свободной форме' name="text" id="mail_text"></textarea>
+          </div>
+          <button class="device-btn" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -328,5 +332,6 @@
       </section>
     </div>
   </footer>
+  <script src="../js/index.js"></script>
 </body>
 </html>
