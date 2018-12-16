@@ -332,7 +332,7 @@ header .site-navigation a {
   margin-right: 70px;
 }
 
-.signin::before, .compare::before, .basket::before {
+.signin::before, .compare::before, .basket::before, .user-profile::before {
   content: "";
   display: block;
   width: 12px;
@@ -791,7 +791,8 @@ footer ul {
   margin-right: 44px;
 }
 
-footer .signin::before {
+footer .signin::before,
+footer .user-profile::before {
   background-image: url('../img/user_yellow.svg');
 }
 
