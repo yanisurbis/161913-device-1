@@ -8,19 +8,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-	<header>
+	<header class="catalog-header">
 		<nav class="main-navigation">
 			<a href="./index.html" class="main-header-logo">
 				<img src="img/logo.svg" alt="logo">
       </a>
       <div class="flex">
-        <form class='w-50' action="https://echo.htmlacademy.ru" method="get">
+        <form class='w-50 site-search' action="https://echo.htmlacademy.ru" method="get">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input type="search" name="search" id="search"/>
+          <input name="search" id="search" placeholder="Поиск по сайту"/>
+          <button type="submit">Найти</button>
         </form>
-        <div class="w-50 flex justify-between">
+        <div class="w-50 flex justify-between align-center">
           <ul class="user-navigation">
             <li><a href="#" class="user-profile">Валентин Петухов</a></li>
             <li><a href="#" class="logout">Выйти</a></li>
@@ -32,7 +32,8 @@
         </div>
       </div>
       <div class="flex site-navigation">
-        <div class="catalog w-50">Каталог товаров
+        <div class="catalog w-50">
+          <span>Каталог товаров</span>
           <div class="catalog-menu-wrapper">
             <ul class="catalog-menu">
               <li><a href="#">Виртуальная реальность</a></li>
@@ -55,14 +56,16 @@
   <main class="container products">
     <h1 class="visually-hidden">Каталог товаров</h1>
     <section>
-      <h2>Моноподы для селфи</h2>
-      <nav>
-        <ol class="catalog-navigation">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a>Моноподы для селфи</a></li>
-        </ol>
-      </nav>
+      <div class="catalog-navigation-wrapper">
+        <h2>Моноподы для селфи</h2>
+        <nav>
+          <ol class="catalog-navigation">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог товаров</a></li>
+            <li><a>Моноподы для селфи</a></li>
+          </ol>
+        </nav>
+      </div>
       <div class="flex">
         <section class="filters">
           <h3 class="visually-hidden">Фильтры</h3>

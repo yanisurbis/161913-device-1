@@ -71,6 +71,87 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+/* input  */
+
+header form {
+  display: flex;
+  position: relative;
+}
+
+header form::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../img/search.svg');
+  margin-right: 14px;
+  top: 18px;
+  left: 0px;
+  position: absolute;
+}
+
+#search {
+  border: none;
+  background: transparent;
+  padding: 7px 15px 7px 30px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-right: none;
+  border-left: none;
+  width: 365px;
+  height: 49px;
+  position: relative;
+}
+
+#search + button {
+  display: none;
+  width: 85px;
+  height: 49px;
+  background: transparent;
+  font-family: var(--open-sans);
+  font-size: 15px;
+  line-height: 2;
+  border: 2px solid #000;
+}
+
+#search + button:hover {
+  display: block;
+  background: #000;
+  color: #fff;
+}
+
+#search + button:focus {
+  background: #000;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  display: block;
+}
+
+#search::placeholder {
+  font-size: 15px;
+  line-height: 30px;
+  font-family: var(--open-sans);
+  color: #000;
+  opacity: 0.3;
+}
+
+#search:hover::placeholder {
+  opacity: 0.6;
+}
+
+#search:focus {
+  opacity: 1;
+  border-bottom-color:black;
+  outline: none;
+}
+
+#search:focus + button {
+  display: block;
+}
+
 /* standart button  */
 
 .device-btn, .device-btn1 {
@@ -151,6 +232,10 @@ a:hover, a:focus {
   justify-content: space-between;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .hidden, .dn {
   display: none;
 }
@@ -163,7 +248,7 @@ header {
 }
 
 header nav {
-  padding: 66px 60px 0px;
+  padding: 50px 60px 0px;
 }
 
 header::before {
@@ -175,6 +260,14 @@ header::before {
   background: #FCE09B;
   height: 299px;
   top: 20px;
+}
+
+.landing-header::before {
+  height: 299px;
+}
+
+.catalog-header::before {
+  height: 196px;
 }
 
 .landing {
@@ -258,6 +351,34 @@ header .main-header-logo:focus {
 
 .catalog {
   position: relative;
+}
+
+.catalog span:hover {
+  opacity: 0.3;
+}
+
+.catalog span {
+  position: relative;
+}
+
+.catalog span::after {
+  content: "";
+  opacity: 0.3;
+  position: absolute;
+  top: 4px;
+  right: -40px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../img/plus.svg');
+  margin-right: 14px;
+}
+
+header .catalog:hover span::after {
+  opacity: 0.3;
 }
 
 .catalog-menu {
@@ -1063,11 +1184,18 @@ footer .basket::before {
 
 /* Catalog navigation */
 
+.catalog-navigation-wrapper {
+  max-width: 1160px;
+  padding: 0px 60px 35px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .catalog-navigation {
   list-style-type: none;
   display: flex;
   font-size: 14px;
-  
+  padding-left: 0px;
 }
 
 .catalog-navigation li:not(:last-child) {
@@ -1077,6 +1205,22 @@ footer .basket::before {
 .catalog-navigation a {
   color: var(--black3);
   font-family: var(--open-sans);
+}
+
+.catalog-navigation li:not(:first-child) {
+  display: inline-flex;
+  align-items: center;
+}
+
+.catalog-navigation li:not(:first-child)::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/nav-arrow.svg');
+  margin-right: 14px;
 }
 
 /* catalog */

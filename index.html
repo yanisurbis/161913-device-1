@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<header>
+	<header class="landing-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo">
 				<img src="img/logo.svg" alt="logo">
@@ -17,9 +17,10 @@
       <div class="flex">
         <form class='w-50' action="https://echo.htmlacademy.ru" method="get">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input type="search" name="search" id="search"/>
+          <input type="search" name="search" id="search" placeholder="Поиск по сайту" />
+          <button type="submit">Найти</button>
         </form>
-        <div class="w-50 flex justify-between">
+        <div class="w-50 flex justify-between align-center">
           <ul class="user-navigation">
             <li><a href="#" class="signin">Войти</a></li>
           </ul>
@@ -30,7 +31,8 @@
         </div>
       </div>
       <div class="flex site-navigation">
-        <div class="catalog w-50">Каталог товаров
+        <div class="catalog w-50">
+          <span>Каталог товаров</span>
           <div class="catalog-menu-wrapper">
             <ul class="catalog-menu">
               <li><a href="#">Виртуальная реальность</a></li>
