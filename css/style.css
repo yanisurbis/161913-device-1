@@ -984,6 +984,7 @@ footer .basket::before {
   height: 380px;
   margin-right: 40px;
   margin-bottom: 93px;
+  position: relative;
 }
 
 .items-wrapper .title-price {
@@ -1006,6 +1007,65 @@ footer .basket::before {
   font-family: var(--gilroy);
   font-size: 17px;
   max-width: 250px;
+}
+
+.items-wrapper .product-overlay {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 380px;
+  width: 360px;
+  background-color: rgba(238, 238, 238, 0.7);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-wrapper img:hover + .product-overlay,
+.product-overlay:hover {
+  display: flex;
+}
+
+.items-wrapper .add-to-compare {
+  margin-top: 20px;
+  border: none;
+  background: transparent;
+  font-family: var(--open-sans);
+  font-size: 13px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.items-wrapper .add-to-compare:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.items-wrapper .add-to-compare:focus {
+  color: rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.items-wrapper .new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-wrapper .new::before {
+  content: "new";
+  text-transform: uppercase;
+  font-family: var(--gilroy);
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.1);
 }
 
 /* PAGINATION */
@@ -1166,7 +1226,7 @@ footer .basket::before {
 }
 
 .sort-by .sort-direction li:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .sort-by .sort-options a {
@@ -1180,6 +1240,27 @@ footer .basket::before {
 
 .sort-by .sort-options a:not(.current) {
   color: var(--black3);
+}
+
+.sort-direction a::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sort-direction a.active::before {
+  opacity: 0.2;
+}
+
+.sort-direction a.up::before {
+  background-image: url('../img/icon-up-dir.svg');
+}
+
+.sort-direction a.down::before {
+  background-image: url('../img/icon-down-dir.svg');
 }
 
 /* Catalog navigation */
