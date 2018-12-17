@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<header>
+	<header class="landing-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo">
 				<img src="img/logo.svg" alt="logo">
@@ -17,28 +17,32 @@
       <div class="flex">
         <form class='w-50' action="https://echo.htmlacademy.ru" method="get">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input type="search" name="search" id="search"/>
+          <input type="search" name="search" id="search" placeholder="Поиск по сайту" />
+          <button type="submit">Найти</button>
         </form>
-        <div class="w-50 flex justify-between">
+        <div class="w-50 flex justify-between align-center">
           <ul class="user-navigation">
-            <li><a href="#">Войти</a></li>
+            <li><a href="#" class="signin">Войти</a></li>
           </ul>
           <ul class="site-features flex">
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
+            <li><a href="#" class="compare">Сравнить</a></li>
+            <li><a href="#" class="basket">Корзина</a></li>
           </ul>
         </div>
       </div>
       <div class="flex site-navigation">
-        <div class="catalog w-50">Каталог товаров
-          <ul class="catalog-menu">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="./catalog.html">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
-          </ul>
+        <div class="catalog w-50">
+          <span>Каталог товаров</span>
+          <div class="catalog-menu-wrapper">
+            <ul class="catalog-menu">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="./catalog.html">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </div>
         </div>
         <ul class="flex w-50">
           <li><a href="#">Доставка</a></li>
@@ -46,7 +50,6 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </div>
-      
     </nav>
   </header>
   <main class="container landing">
@@ -248,38 +251,42 @@
       <section class="contacts w-50">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href='#' class="map">
+        <button class="map">
           <img src="img/map.jpg" alt="карта с отметкой, где мы находимся">
-        </a>
-        <button class="device-btn" type="button">Напишите нам</button>
+        </button>
+        <button class="device-btn" type="button" id="contact-us">Напишите нам</button>
       </section>
     </div>
-    <section class="modal map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <button class="modal-close">
-        <span class="visually-hidden">Закрыть модальное окно</span>
-      </button>
+    <section class="modal map hidden">
+      <div class="modal-content">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <button class="modal-close">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+      </div>
     </section>
-    <section class="modal contact-form">
-      <h2 class="visually-hidden">Свяжитесь с нами</h2>
-      <button class="modal-close">
-        <span class="visually-hidden">Закрыть модальное окно</span>
-      </button>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div>
-          <label for="mail_name">Ваше имя:</label>
-          <input type="text" name="name" placeholder="Имя Фамилия" id="mail_name">
-        </div>
-        <div>
-          <label for="mail_email">Ваш e-mail:</label>
-          <input type="email" name="email" placeholder="email@example.com" id="mail_email">
-        </div>
-        <div>
-          <label for="mail_text">Текст письма:</label>
-          <textarea placeholder='В свободной форме' name="text" id="mail_text"></textarea>
-        </div>
-        <button class="device-btn" type="submit">Отправить</button>
-      </form>
+    <section class="modal contact-form hidden">
+      <div class="modal-content">
+        <h2 class="visually-hidden">Свяжитесь с нами</h2>
+        <button class="modal-close">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div>
+            <label for="mail_name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Имя Фамилия" id="mail_name">
+          </div>
+          <div>
+            <label for="mail_email">Ваш e-mail:</label>
+            <input type="email" name="email" placeholder="email@example.com" id="mail_email">
+          </div>
+          <div>
+            <label for="mail_text">Текст письма:</label>
+            <textarea placeholder='В свободной форме' name="text" id="mail_text"></textarea>
+          </div>
+          <button class="device-btn" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -327,5 +334,6 @@
       </section>
     </div>
   </footer>
+  <script src="../js/index.js"></script>
 </body>
 </html>

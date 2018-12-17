@@ -8,39 +8,42 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-	<header>
+	<header class="catalog-header">
 		<nav class="main-navigation">
 			<a href="./index.html" class="main-header-logo">
 				<img src="img/logo.svg" alt="logo">
       </a>
       <div class="flex">
-        <form class='w-50' action="https://echo.htmlacademy.ru" method="get">
+        <form class='w-50 site-search' action="https://echo.htmlacademy.ru" method="get">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input type="search" name="search" id="search"/>
+          <input name="search" id="search" placeholder="Поиск по сайту"/>
+          <button type="submit">Найти</button>
         </form>
-        <div class="w-50 flex justify-between">
+        <div class="w-50 flex justify-between align-center">
           <ul class="user-navigation">
-            <li><a href="#">Валентин Петухов</a></li>
+            <li><a href="#" class="user-profile">Валентин Петухов</a></li>
             <li><a href="#" class="logout">Выйти</a></li>
           </ul>
           <ul class="site-features flex">
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
+            <li><a href="#" class="compare">Сравнить</a></li>
+            <li><a href="#" class="basket">Корзина</a></li>
           </ul>
         </div>
       </div>
       <div class="flex site-navigation">
-        <div class="catalog w-50">Каталог товаров
-          <ul class="catalog-menu">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a>Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
-          </ul>
+        <div class="catalog w-50">
+          <span>Каталог товаров</span>
+          <div class="catalog-menu-wrapper">
+            <ul class="catalog-menu">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a>Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </div>
         </div>
         <ul class="flex w-50">
           <li><a href="#">Доставка</a></li>
@@ -53,14 +56,16 @@
   <main class="container products">
     <h1 class="visually-hidden">Каталог товаров</h1>
     <section>
-      <h2>Моноподы для селфи</h2>
-      <nav>
-        <ol class="catalog-navigation">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a>Моноподы для селфи</a></li>
-        </ol>
-      </nav>
+      <div class="catalog-navigation-wrapper">
+        <h2>Моноподы для селфи</h2>
+        <nav>
+          <ol class="catalog-navigation">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог товаров</a></li>
+            <li><a>Моноподы для селфи</a></li>
+          </ol>
+        </nav>
+      </div>
       <div class="flex">
         <section class="filters">
           <h3 class="visually-hidden">Фильтры</h3>
@@ -122,8 +127,8 @@
               <li><a href="#">По популярности</a></li>
             </ul>
             <ul class="sort-direction">
-              <li><a href="#">+<p class="visually-hidden">По возрастанию</p></a></li>
-              <li><a href="#">-<p class="visually-hidden">По убыванию</p></a></li>
+              <li><a href="#" class="up active"><p class="visually-hidden">По возрастанию</p></a></li>
+              <li><a href="#" class="down"><p class="visually-hidden">По убыванию</p></a></li>
             </ul>
           </section>
           <section class="items">
@@ -131,6 +136,12 @@
             <div class="items-wrapper">
               <div>
                 <img src="img/item-1.jpg" alt="product">
+                <div class="product-overlay">
+                  <button type="button" class="device-btn">
+                    в корзину
+                  </button>
+                  <button type="button" class="add-to-compare">Добавить к сравнению</button>
+                </div>
                 <div class="title-price">
                   <a href="#">Любительская селфи-палка</a>
                   <p>500 руб.</p>
@@ -138,6 +149,12 @@
               </div>
               <div>
                 <img src="img/item-2.jpg" alt="product">
+                <div class="product-overlay">
+                  <button type="button" class="device-btn">
+                    в корзину
+                  </button>
+                  <button type="button" class="add-to-compare">Добавить к сравнению</button>
+                </div>
                 <div class="title-price">
                   <a href="#">Профессиональная<br>селфи-палка</a>
                   <p>1 500 руб.</p>
@@ -145,6 +162,12 @@
               </div>
               <div>
                 <img src="img/item-3.jpg" alt="product">
+                <div class="product-overlay">
+                  <button type="button" class="device-btn">
+                    в корзину
+                  </button>
+                  <button type="button" class="add-to-compare">Добавить к сравнению</button>
+                </div>
                 <div class="title-price">
                   <a href="#">Непотопляемая селфи-палка</a>
                   <p>2 500 руб.</p>
@@ -152,6 +175,13 @@
               </div>
               <div>
                 <img src="img/item-4.jpg" alt="product">
+                <div class="product-overlay">
+                  <button type="button" class="device-btn">
+                    в корзину
+                  </button>
+                  <button type="button" class="add-to-compare">Добавить к сравнению</button>
+                </div>
+                <div class="new"></div>
                 <div class="title-price">
                   <a href="#">Селфи-палка «Следуй за мной»</a>
                   <p>4 900 руб.</p>
@@ -178,10 +208,10 @@
         <img src="img/logo-yellow.svg" alt="device shop logo">
       </a>
       <ul class="footer-site-features">
-        <li><a href="#">Валентин Петухов</a></li>
+        <li><a href="#" class="user-profile">Валентин Петухов</a></li>
         <li><a href="#" class="logout">Выйти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li><a href="#" class="compare">Сравнить</a></li>
+        <li><a href="#" class="basket">Корзина</a></li>
       </ul>
     </div>
     <div>
