@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Девайс</title>
-	<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Девайс</title>
+  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<header class="landing-header">
-		<nav class="main-navigation">
-			<a class="main-header-logo">
-				<img src="img/logo.svg" alt="logo">
+  <header class="landing-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/logo.svg" alt="logo">
       </a>
       <div class="flex">
         <form class='w-50' action="https://echo.htmlacademy.ru" method="get">
@@ -71,7 +72,7 @@
         <span class="index">01</span>
         <div class="image-wrapper">
           <img src="img/slider-1.png" alt="селфи палка">
-        </div>  
+        </div>
         <div>
           <b class="slogan">
             Делай селфи,<br>как Бен Стиллер!
@@ -196,18 +197,19 @@
       </ul>
       <div class="service">
         <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+          заработаем, поднимая его на ваш этаж.</p>
       </div>
       <div class="service hidden">
         <h3>Гарантия</h3>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.
+          Товар, не дом, конечно же.
         </p>
       </div>
       <div class="service hidden">
         <h3>Кредит</h3>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
-            условия кредита. Выгодные для нашего банка, разумеется.
+        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+          условия кредита. Выгодные для нашего банка, разумеется.
         </p>
       </div>
     </div>
@@ -240,7 +242,8 @@
       <section class="about-us w-50">
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+          компаниями:</p>
         <ul>
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
@@ -250,7 +253,8 @@
       </section>
       <section class="contacts w-50">
         <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+          Всякое бывает.</p>
         <button class="map">
           <img src="img/map.jpg" alt="карта с отметкой, где мы находимся">
         </button>
@@ -260,6 +264,7 @@
     <section class="modal map hidden">
       <div class="modal-content">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="./img/map.jpg" alt="Карта с нашим местоположением">
         <button class="modal-close">
           <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
@@ -272,15 +277,17 @@
           <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <div>
-            <label for="mail_name">Ваше имя:</label>
-            <input type="text" name="name" placeholder="Имя Фамилия" id="mail_name">
+          <div class="row">
+            <div>
+              <label for="mail_name">Ваше имя:</label>
+              <input type="text" name="name" placeholder="Имя Фамилия" id="mail_name">
+            </div>
+            <div>
+              <label for="mail_email">Ваш e-mail:</label>
+              <input type="email" name="email" placeholder="email@example.com" id="mail_email">
+            </div>
           </div>
-          <div>
-            <label for="mail_email">Ваш e-mail:</label>
-            <input type="email" name="email" placeholder="email@example.com" id="mail_email">
-          </div>
-          <div>
+          <div class="message">
             <label for="mail_text">Текст письма:</label>
             <textarea placeholder='В свободной форме' name="text" id="mail_text"></textarea>
           </div>
@@ -336,4 +343,5 @@
   </footer>
   <script src="../js/index.js"></script>
 </body>
+
 </html>
