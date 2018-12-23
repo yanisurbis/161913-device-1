@@ -2,22 +2,23 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Девайс</title>
+  <meta charset="UTF-8">
+  <title>Девайс</title>
   <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<header class="catalog-header">
-		<nav class="main-navigation">
-			<a href="./index.html" class="main-header-logo">
-				<img src="img/logo.svg" alt="logo">
+  <header class="catalog-header">
+    <nav class="main-navigation">
+      <a href="./index.html" class="main-header-logo">
+        <img src="img/logo.svg" alt="logo">
       </a>
       <div class="flex">
         <form class='w-50 site-search' action="https://echo.htmlacademy.ru" method="get">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input name="search" id="search" placeholder="Поиск по сайту"/>
+          <input name="search" id="search" placeholder="Поиск по сайту" />
           <button type="submit">Найти</button>
         </form>
         <div class="w-50 flex justify-between align-center">
@@ -74,9 +75,9 @@
             <fieldset>
               <legend>Стоимость</legend>
               <!-- to be fixed -->
-              <input type="range" name="price_range" min="0" max="50000" step="1000"/>
+              <!-- <input type="range" name="price_range" min="0" max="50000" step="1000" /> -->
             </fieldset>
-            <fieldset>
+            <fieldset class="color">
               <legend>Цвет</legend>
               <ul>
                 <li>
@@ -89,7 +90,7 @@
                 </li>
                 <li>
                   <input type="checkbox" id="blue" name="blue" checked>
-                  <label for="blue" >Синий</label>
+                  <label for="blue">Синий</label>
                 </li>
                 <li>
                   <input type="checkbox" id="red" name="red" checked>
@@ -101,15 +102,15 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="bluetooth">
               <legend>Bluetooth</legend>
               <ul>
                 <li>
-                  <input type="radio" name="bluetooth_presence" id="bluetooth_absent" checked value="true"><br>
+                  <input type="radio" name="bluetooth_presence" id="bluetooth_absent" checked value="true">
                   <label for="bluetooth_absent">Есть</label>
                 </li>
                 <li>
-                  <input type="radio" name="bluetooth_presence" id="bluetooth_present" value="false"><br>
+                  <input type="radio" name="bluetooth_presence" id="bluetooth_present" value="false">
                   <label for="bluetooth_present">Нет</label>
                 </li>
               </ul>
@@ -127,8 +128,12 @@
               <li><a href="#">По популярности</a></li>
             </ul>
             <ul class="sort-direction">
-              <li><a href="#" class="up active"><p class="visually-hidden">По возрастанию</p></a></li>
-              <li><a href="#" class="down"><p class="visually-hidden">По убыванию</p></a></li>
+              <li><a href="#" class="up active">
+                  <p class="visually-hidden">По возрастанию</p>
+                </a></li>
+              <li><a href="#" class="down">
+                  <p class="visually-hidden">По убыванию</p>
+                </a></li>
             </ul>
           </section>
           <section class="items">
@@ -185,7 +190,7 @@
                 <div class="title-price">
                   <a href="#">Селфи-палка «Следуй за мной»</a>
                   <p>4 900 руб.</p>
-                </div>      
+                </div>
               </div>
             </div>
             <nav class="pagination">
@@ -249,4 +254,5 @@
     </div>
   </footer>
 </body>
+
 </html>
