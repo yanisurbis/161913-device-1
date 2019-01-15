@@ -963,6 +963,7 @@ header .basket::before {
 footer {
   background-color: var(--brown1);
   padding: 65px 139px;
+  font-family: var(--open-sans);
 }
 
 footer>div {
@@ -1307,6 +1308,7 @@ footer .basket::before {
   margin-bottom: 40px;
   position: relative;
   padding-top: 10px;
+  font-family: var(--open-sans);
 }
 
 .filters fieldset legend {
