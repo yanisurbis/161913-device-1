@@ -1276,7 +1276,6 @@ footer .basket::before {
 .filters {
   width: 468px;
   background-color: var(--grey2);
-  z-index: -2;
 }
 
 .filters>form {
