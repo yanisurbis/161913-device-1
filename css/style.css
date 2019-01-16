@@ -1376,8 +1376,14 @@ fieldset li:not(:last-child) {
   background-image: url('../img/checkbox-on.svg');
 }
 
-.bluetooth input[type=radio]+label:hover {
-  color: red;
+.bluetooth input[type=radio]+label:hover::before,
+.color input[type=checkbox]+label:hover::before {
+  opacity: 0.6;
+}
+
+.bluetooth input[type=radio]:disabled+label,
+.color input[type=checkbox]:disabled+label {
+  opacity: 0.25;
 }
 
 /* SORTINGS */
