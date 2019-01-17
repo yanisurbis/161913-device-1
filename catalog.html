@@ -72,10 +72,15 @@
           <h3 class="visually-hidden">Фильтры</h3>
           <p>Фильтр:</p>
           <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+            <fieldset class="range">
               <legend>Стоимость</legend>
-              <!-- to be fixed -->
-              <!-- <input type="range" name="price_range" min="0" max="50000" step="1000" /> -->
+              <div class="filter-range"></div>
+              <button type="button" class="filter-buttons buttons-from">
+                <span>От 0</span>
+              </button>
+              <button type="button" class="filter-buttons buttons-to">
+                <span>До 5000</span>
+              </button>
             </fieldset>
             <fieldset class="color">
               <legend>Цвет</legend>
