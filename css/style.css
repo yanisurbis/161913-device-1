@@ -30,13 +30,14 @@ html {
   overflow: hidden;
 }
 
-body {
+.main-content-wrapper {
   max-width: 1440px;
   margin: 0 auto;
   /* padding-top: 21px; */
   font-family: Gilroy, Arial, sans-serif;
   padding-top: 23px;
 }
+
 
 header,
 main {
@@ -141,12 +142,12 @@ header form::before {
 
 /* standart button  */
 
-.device-btn,
-.device-btn1 {
+.device-btn {
   position: relative;
   font-family: 'GilroyBold', 'Arial', sans-serif;
 
   display: inline-block;
+  vertical-align: baseline;
   padding: 9px 40px;
 
   border: none;
@@ -155,6 +156,28 @@ header form::before {
   font-family: 'GilroyBold', 'Arial', sans-serif;
   vertical-align: top;
   text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.device-btn1 {
+  position: relative;
+  font-family: 'GilroyBold', 'Arial', sans-serif;
+
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 9px 30px;
+
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  font-family: 'GilroyBold', 'Arial', sans-serif;
+  vertical-align: top;
+  text-align: left;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -175,7 +198,7 @@ header form::before {
 
 .device-btn1:focus::before,
 .device-btn1.current {
-  width: 270px;
+  width: 280px;
   background: #000;
 }
 
@@ -276,6 +299,7 @@ header::before {
 
 header .main-header-logo {
   display: inline-block;
+  vertical-align: baseline;
   position: absolute;
   top: 3px;
 }
@@ -333,7 +357,7 @@ header .main-header-logo:active {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 150px;
+  height: 160px;
   flex-wrap: wrap;
   position: absolute;
   top: 23px;
@@ -554,11 +578,27 @@ header .basket::before {
   background: white;
 }
 
+.slogan-3 {
+  max-width: 150px;
+}
+
 .product .description {
   font-size: 15px;
   line-height: 2;
   color: #464646;
   margin-bottom: 43px;
+}
+
+.description-1 {
+  max-width: 476px;
+}
+
+.description-2 {
+  max-width: 445px;
+}
+
+.description-3 {
+  max-width: 455px;
 }
 
 .product .device-btn {
@@ -570,7 +610,7 @@ header .basket::before {
 }
 
 .product li:not(:last-child) {
-  margin-right: 81px;
+  margin-right: 75px;
 }
 
 .product .feature-value {
@@ -619,6 +659,10 @@ header .basket::before {
 
 .categories li:nth-child(2) a::before {
   background-position-y: bottom;
+}
+
+.categories li:nth-child(2) p {
+  max-width: 100px;
 }
 
 .categories p {
@@ -684,7 +728,7 @@ header .basket::before {
 }
 
 .services ul {
-  width: 275px;
+  width: 280px;
   height: 319px;
   display: flex;
   flex-direction: column;
@@ -727,7 +771,7 @@ header .basket::before {
   position: absolute;
   content: '';
   display: block;
-  right: -230px;
+  right: -270px;
   top: 75px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1040,6 +1084,7 @@ footer ul {
 
 .footer-logo {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .footer-logo:hover {
@@ -1100,6 +1145,7 @@ footer .basket::before {
 
 .social-buttons a {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .social-buttons a::before {
@@ -1218,8 +1264,8 @@ footer .basket::before {
 
 .items-wrapper .new {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 30px;
+  right: 30px;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -1391,7 +1437,7 @@ fieldset li:not(:last-child) {
   display: block;
   width: 27px;
   height: 23px;
-  background-position: center;
+  background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 10px;
@@ -1568,6 +1614,7 @@ fieldset li:not(:last-child) {
   background: transparent;
   cursor: pointer;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .slider-controllers button::before {
@@ -1622,7 +1669,6 @@ fieldset li:not(:last-child) {
 
 .filter-range {
   position: relative;
-  width: 200px;
   height: 2px;
   background-image: -webkit-linear-gradient(left, #91c92f, #91c92f 110px, #dbdbdb 110px, #dbdbdb);
 }
@@ -1650,11 +1696,11 @@ fieldset li:not(:last-child) {
 }
 
 .buttons-from {
-  left: 105px;
+  left: 0px;
 }
 
 .buttons-to {
-  left: 211px;
+  left: 115px;
 }
 
 .filter-buttons span {
