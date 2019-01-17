@@ -4,10 +4,20 @@ const contactFormModal = document.querySelector(".modal.contact-form");
 const routeToUsMapModal = document.querySelector(".modal.map");
 const routeToUsMapModalCloseBtn = document.querySelector(".modal.map button.modal-close");
 const contactFormModalCloseBtn = document.querySelector(".modal.contact-form button.modal-close");
+
+const form = document.querySelector(".contact-us")
+const name = document.querySelector(".input-name")
+const email = document.querySelector(".input-email")
+const text = document.querySelector(".input-text")
+const popup = document.querySelector(".contact-form .modal-content")
+
 contactUsBtn.addEventListener("click", () => contactFormModal.classList.toggle("hidden"))
 routeToUsBtn.addEventListener("click", () => routeToUsMapModal.classList.toggle("hidden"))
 routeToUsMapModalCloseBtn.addEventListener("click", () => routeToUsMapModal.classList.toggle("hidden"));
-contactFormModalCloseBtn.addEventListener("click", () => contactFormModal.classList.toggle("hidden"));
+contactFormModalCloseBtn.addEventListener("click", () => {
+  contactFormModal.classList.toggle("hidden");
+  popup.classList.remove("modal-error");
+});
 
 
 const updateClasses = (list, slideIndexToDisplay) => {
@@ -38,3 +48,10 @@ const servicesControllers = document.querySelectorAll(".services button");
 const servicesSlides = document.querySelectorAll(".services .service");
 
 addToggleLogic(servicesControllers, servicesSlides);
+
+form.addEventListener("submit", function (evt) {
+  if (!name.value || !email.value || !text.value) {
+    evt.preventDefault();
+    popup.classList.add("modal-error");
+  }
+});
