@@ -1016,39 +1016,42 @@ header .basket::before {
 
 footer {
   background-color: #464646;
-  padding: 65px 139px;
   font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
-footer>div {
+.main-content-wrapper.footer {
+  padding: 65px 139px;
+}
+
+.main-content-wrapper.footer>div {
   display: flex;
   justify-content: space-between;
 }
 
-footer>div:nth-child(2),
-footer>div:nth-child(3) {
+.main-content-wrapper.footer>div:nth-child(2),
+.main-content-wrapper.footer>div:nth-child(3) {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-footer>div:first-child {
+.main-content-wrapper.footer>div:first-child {
   margin-bottom: 10px;
   align-items: flex-start;
 }
 
-footer>div:nth-child(2) {
+.main-content-wrapper.footer>div:nth-child(2) {
   margin-bottom: 45px;
 }
 
-footer>div:nth-child(3)::before {
+.main-content-wrapper.footer>div:nth-child(3)::before {
   content: '';
   width: 80px;
   height: 7px;
   background-color: #f0c52e;
 }
 
-footer ul {
+.main-content-wrapper.footer ul {
   display: flex;
   align-items: center;
 }
