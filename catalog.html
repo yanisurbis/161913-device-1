@@ -35,7 +35,7 @@
         </div>
         <div class="flex site-navigation">
           <div class="catalog w-50">
-            <span>Каталог товаров</span>
+            <span tabindex="0">Каталог товаров</span>
             <div class="catalog-menu-wrapper">
               <ul class="catalog-menu list">
                 <li><a href="#">Виртуальная реальность</a></li>
@@ -108,23 +108,23 @@
               <legend>Цвет</legend>
               <ul class="list">
                 <li>
-                  <input type="checkbox" id="black" name="black" checked>
+                  <input class="visually-hidden" type="checkbox" id="black" name="black" checked>
                   <label for="black">Черный</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="white" name="white">
+                  <input class="visually-hidden" type="checkbox" id="white" name="white">
                   <label for="white">Белый</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="blue" name="blue" checked>
+                  <input class="visually-hidden" type="checkbox" id="blue" name="blue" checked>
                   <label for="blue">Синий</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="red" name="red" checked>
+                  <input class="visually-hidden" type="checkbox" id="red" name="red" checked>
                   <label for="red">Красный</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="pink" name="pink">
+                  <input class="visually-hidden" type="checkbox" id="pink" name="pink">
                   <label for="pink">Розовый</label>
                 </li>
               </ul>
@@ -133,11 +133,12 @@
               <legend>Bluetooth</legend>
               <ul class="list">
                 <li>
-                  <input type="radio" name="bluetooth_presence" id="bluetooth_absent" checked value="true">
+                  <input class="visually-hidden" type="radio" name="bluetooth_presence" id="bluetooth_absent" checked
+                    value="true">
                   <label for="bluetooth_absent">Есть</label>
                 </li>
                 <li>
-                  <input type="radio" name="bluetooth_presence" id="bluetooth_present" value="false">
+                  <input class="visually-hidden" type="radio" name="bluetooth_presence" id="bluetooth_present" value="false">
                   <label for="bluetooth_present">Нет</label>
                 </li>
               </ul>
