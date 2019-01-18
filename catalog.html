@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="main-content-wrapper catalog">
+  <div class="main-content-wrapper">
     <header class="catalog-header header">
       <nav class="main-navigation nav">
         <a href="./index.html" class="main-header-logo">
@@ -55,78 +55,25 @@
         </div>
       </nav>
     </header>
-    <main class="container products main">
-      <h1 class="visually-hidden">Каталог товаров</h1>
-      <section>
-        <div class="catalog-navigation-wrapper">
-          <h2>Моноподы для селфи</h2>
-          <nav>
-            <ol class="catalog-navigation">
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Каталог товаров</a></li>
-              <li><a>Моноподы для селфи</a></li>
-            </ol>
-          </nav>
-        </div>
-        <div class="flex">
-          <section class="filters">
-            <h3 class="visually-hidden">Фильтры</h3>
-            <p>Фильтр:</p>
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <fieldset class="range fieldset">
-                <legend>Стоимость</legend>
-                <div class="filter-range"></div>
-                <button type="button" class="filter-buttons buttons-from">
-                  <span>От 0</span>
-                </button>
-                <button type="button" class="filter-buttons buttons-to">
-                  <span>До 5000</span>
-                </button>
-              </fieldset>
-              <fieldset class="color fieldset">
-                <legend>Цвет</legend>
-                <ul class="list">
-                  <li>
-                    <input type="checkbox" id="black" name="black" checked>
-                    <label for="black">Черный</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="white" name="white">
-                    <label for="white">Белый</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="blue" name="blue" checked>
-                    <label for="blue">Синий</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="red" name="red" checked>
-                    <label for="red">Красный</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="pink" name="pink">
-                    <label for="pink">Розовый</label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="bluetooth fieldset">
-                <legend>Bluetooth</legend>
-                <ul class="list">
-                  <li>
-                    <input type="radio" name="bluetooth_presence" id="bluetooth_absent" checked value="true">
-                    <label for="bluetooth_absent">Есть</label>
-                  </li>
-                  <li>
-                    <input type="radio" name="bluetooth_presence" id="bluetooth_present" value="false">
-                    <label for="bluetooth_present">Нет</label>
-                  </li>
-                </ul>
-              </fieldset>
-              <button type="submit" class="device-btn">Показать</button>
-            </form>
-          </section>
-          <div class="sort-by-wrapper">
-            <section class="sort-by">
-              <h3 class="visually-hidden">Сортировки</h3>
+  </div>
+  <main class="container products main">
+    <h1 class="visually-hidden">Каталог товаров</h1>
+    <div>
+      <div class="catalog-navigation-wrapper">
+        <h2>Моноподы для селфи</h2>
+        <nav>
+          <ol class="catalog-navigation">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог товаров</a></li>
+            <li><a>Моноподы для селфи</a></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="shop-line-first-wrapper">
+        <div class="shop-line-first">
+          <p class="column-description">Фильтр:</p>
+          <section class="sort-by">
+            <h2 class="visually-hidden">Сортировки</h3>
               <p>Сортировка:</p>
               <ul class="sort-options list">
                 <li><a href="#" class="current">По цене</a></li>
@@ -141,17 +88,72 @@
                     <p class="visually-hidden">По убыванию</p>
                   </a></li>
               </ul>
-            </section>
-            <section class="items">
-              <h3 class="visually-hidden">Товары</h3>
+          </section>
+        </div>
+      </div>
+      <div class="shop-line-second-wrapper">
+        <div class="shop-line-second">
+          <form action="https://echo.htmlacademy.ru" method="get" class="filters">
+            <fieldset class="range fieldset">
+              <legend>Стоимость</legend>
+              <div class="filter-range"></div>
+              <button type="button" class="filter-buttons buttons-from">
+                <span>От 0</span>
+              </button>
+              <button type="button" class="filter-buttons buttons-to">
+                <span>До 5000</span>
+              </button>
+            </fieldset>
+            <fieldset class="color fieldset">
+              <legend>Цвет</legend>
+              <ul class="list">
+                <li>
+                  <input type="checkbox" id="black" name="black" checked>
+                  <label for="black">Черный</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="white" name="white">
+                  <label for="white">Белый</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="blue" name="blue" checked>
+                  <label for="blue">Синий</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="red" name="red" checked>
+                  <label for="red">Красный</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="pink" name="pink">
+                  <label for="pink">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="bluetooth fieldset">
+              <legend>Bluetooth</legend>
+              <ul class="list">
+                <li>
+                  <input type="radio" name="bluetooth_presence" id="bluetooth_absent" checked value="true">
+                  <label for="bluetooth_absent">Есть</label>
+                </li>
+                <li>
+                  <input type="radio" name="bluetooth_presence" id="bluetooth_present" value="false">
+                  <label for="bluetooth_present">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="device-btn">Показать</button>
+          </form>
+          <section class="items">
+            <h2 class="visually-hidden">Товары</h3>
               <div class="items-wrapper">
                 <div>
                   <img src="img/item-1.jpg" alt="product" width="360" height="380">
                   <div class="product-overlay">
-                    <button type="button" class="device-btn">
+                    <a href="#" class="device-btn">
                       в корзину
-                    </button>
-                    <button type="button" class="add-to-compare">Добавить к сравнению</button>
+                    </a>
+                    <a href="#" class="add-to-compare">Добавить к сравнению</a>
                   </div>
                   <div class="title-price">
                     <a href="#">Любительская селфи-палка</a>
@@ -208,12 +210,11 @@
                   <li><a href="#">Вперед</a></li>
                 </ul>
               </nav>
-            </section>
-          </div>
+          </section>
         </div>
-      </section>
-    </main>
-  </div>
+      </div>
+    </div>
+  </main>
   <footer class="main-footer footer">
     <div class="main-content-wrapper footer-content">
       <div>

@@ -1,5 +1,5 @@
 const contactUsBtn = document.getElementById("contact-us");
-const routeToUsBtn = document.querySelector("button.map");
+const routeToUsBtn = document.querySelector("a.map");
 const contactFormModal = document.querySelector(".modal.contact-form");
 const routeToUsMapModal = document.querySelector(".modal.map");
 const routeToUsMapModalCloseBtn = document.querySelector(".modal.map button.modal-close");
@@ -11,8 +11,14 @@ const email = document.querySelector(".input-email")
 const text = document.querySelector(".input-text")
 const popup = document.querySelector(".contact-form .modal-content")
 
-contactUsBtn.addEventListener("click", () => contactFormModal.classList.toggle("hidden"))
-routeToUsBtn.addEventListener("click", () => routeToUsMapModal.classList.toggle("hidden"))
+contactUsBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  contactFormModal.classList.toggle("hidden");
+})
+routeToUsBtn.addEventListener("click", () => {
+  event.preventDefault();
+  routeToUsMapModal.classList.toggle("hidden");
+})
 routeToUsMapModalCloseBtn.addEventListener("click", () => routeToUsMapModal.classList.toggle("hidden"));
 contactFormModalCloseBtn.addEventListener("click", () => {
   contactFormModal.classList.toggle("hidden");
