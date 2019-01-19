@@ -1381,35 +1381,43 @@ img {
   margin-left: auto;
 }
 
-.pagination li:first-child a,
-.pagination li:last-child a {
+.page:first-child a,
+.page:last-child a {
   padding: 25px;
   color: #000;
   text-transform: uppercase;
   letter-spacing: 3.2px;
 }
 
-.pagination li:first-child a:hover,
-.pagination li:last-child a:hover {
+.page:first-child a:hover,
+.page:last-child a:hover {
   background-color: #dbdbdb;
 }
 
-.pagination li:first-child a:focus,
-.pagination li:last-child a:focus {
+.page:first-child a:focus,
+.page:last-child a:focus {
   color: rgba(0, 0, 0, 0.3);
   background-color: #dbdbdb;
 }
 
-.pagination li:not(:first-child):not(:last-child) {
+.page:not(:first-child):not(:last-child) {
   margin-right: 20px;
 }
 
-.pagination li:not(:first-child):not(:last-child) a {
+.page:not(:first-child):not(:last-child) a {
   color: #000;
 }
 
-.pagination li:not(:first-child):not(:last-child) a:not(.current) {
+.page:not(:first-child):not(:last-child) a:not(.current) {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.page:not(:first-child):not(:last-child) a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.page:not(:first-child):not(:last-child) a:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .pagination {
@@ -1595,6 +1603,18 @@ img {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.sort-options a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-options a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.sort-direction a.active::before {
+  opacity: 0.2;
+}
+
 .sort-direction a::before {
   content: "";
   display: block;
@@ -1604,8 +1624,16 @@ img {
   background-repeat: no-repeat;
 }
 
-.sort-direction a.active::before {
-  opacity: 0.2;
+.sort-direction a:hover::before {
+  opacity: 0.4;
+}
+
+.sort-direction a:focus::before {
+  opacity: 1;
+}
+
+.sort-direction a.down::before {
+  background-image: url("../img/icon-down-dir.svg");
 }
 
 .sort-direction a.up::before {
@@ -1644,6 +1672,14 @@ img {
 .catalog-navigation a {
   color: rgba(0, 0, 0, 0.3);
   font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.catalog-navigation a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-navigation a:active {
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .catalog-navigation li:not(:first-child) {
