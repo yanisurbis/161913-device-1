@@ -228,6 +228,14 @@ img {
   height: 100%;
 }
 
+.device-btn.about-us-btn {
+  padding: 9px 24px;
+}
+
+.device-btn.show-results-btn {
+  margin-left: 10px;
+}
+
 /* utilities  */
 
 .flex {
@@ -431,11 +439,11 @@ img {
 }
 
 .navigation-list > li:first-child {
-  margin-right: 30px;
+  margin-right: 37px;
 }
 
 .navigation-list > li:last-child {
-  margin-left: auto;
+  margin-left: 110px;
 }
 
 .user-navigation {
@@ -533,11 +541,12 @@ img {
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  width: 52%;
+  width: 50%;
 }
 
 .product-details {
   padding-top: 32px;
+  padding-left: 25px;
 }
 
 .product img {
@@ -609,7 +618,7 @@ img {
 }
 
 .product li:not(:last-child) {
-  margin-right: 75px;
+  margin-right: 77px;
 }
 
 .product .feature-value {
@@ -858,7 +867,7 @@ img {
 }
 
 .contacts .device-btn {
-  margin-top: 70px;
+  margin-top: 67px;
 }
 
 .about-us p {
@@ -888,7 +897,7 @@ img {
 }
 
 .about-us li {
-  padding-left: 13px;
+  padding-left: 16px;
 }
 
 .contacts .map {
@@ -1279,7 +1288,7 @@ img {
   width: 835px;
   padding-left: 75px;
   padding-top: 70px;
-  padding-bottom: 75px;
+  padding-bottom: 78px;
   background-color: #fff;
 }
 
@@ -1288,7 +1297,8 @@ img {
   flex-wrap: wrap;
 }
 
-.items-wrapper > div {
+.items-wrapper > div:nth-child(1),
+.items-wrapper > div:nth-child(2) {
   width: 360px;
   margin-bottom: 18px;
   position: relative;
@@ -1389,7 +1399,7 @@ img {
 }
 
 .pagination li:first-child {
-  margin-right: auto;
+  margin-right: 210px;
 }
 
 .pagination li:last-child {
@@ -1398,7 +1408,7 @@ img {
 
 .page:first-child a,
 .page:last-child a {
-  padding: 25px;
+  padding: 30px;
   color: #000;
   text-transform: uppercase;
   letter-spacing: 3.2px;
@@ -1416,7 +1426,7 @@ img {
 }
 
 .page:not(:first-child):not(:last-child) {
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .page:not(:first-child):not(:last-child) a {
@@ -1475,7 +1485,7 @@ img {
 }
 
 .fieldset {
-  width: 200px;
+  width: 225px;
   border: none;
   position: relative;
   padding-top: 10px;
@@ -1492,11 +1502,11 @@ img {
 }
 
 .filters .color {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .filters .bluetooth {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .fieldset legend {
@@ -1574,7 +1584,7 @@ img {
   font-family: "GilroyBold", "Arial", sans-serif;
   margin-right: 50px;
   line-height: 1.5;
-  letter-spacing: 3.2px;
+  letter-spacing: 4.2px;
   text-transform: uppercase;
 }
 
@@ -1673,7 +1683,7 @@ img {
 }
 
 .catalog-navigation li:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 16px;
 }
 
 .catalog-navigation a {
