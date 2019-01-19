@@ -12,6 +12,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  min-width: 1160px;
+}
+
 *,
 *:before,
 *:after {
