@@ -355,8 +355,8 @@ img {
 }
 
 .catalog:hover .catalog-menu-wrapper,
-.catalog span:hover+.catalog-menu-wrapper,
-.catalog span:focus+.catalog-menu-wrapper,
+.catalog-link:hover+.catalog-menu-wrapper,
+.catalog-link:focus+.catalog-menu-wrapper,
 .catalog-menu-wrapper:hover .catalog-menu-wrapper {
   display: flex;
   flex-direction: column;
@@ -381,15 +381,15 @@ img {
   position: relative;
 }
 
-.catalog span:hover {
+.catalog-link:hover {
   opacity: 0.3;
 }
 
-.catalog span {
+.catalog-link {
   position: relative;
 }
 
-.catalog span::after {
+.catalog-link::after {
   content: '';
   opacity: 0.3;
   position: absolute;
