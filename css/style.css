@@ -246,12 +246,8 @@ img {
   flex-wrap: wrap;
 }
 
-.w-50 {
+.width50 {
   width: 50%;
-}
-
-.w-100 {
-  width: 100%;
 }
 
 .justify-between {
@@ -1720,10 +1716,7 @@ img {
   opacity: 0.6;
 }
 
-/* */
-
-.hidden,
-.dn {
+.hidden {
   display: none;
 }
 
