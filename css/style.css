@@ -409,6 +409,7 @@ img {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 390px;
+  max-height: 110px;
 }
 
 .catalog-menu li:last-child {
@@ -1490,16 +1491,8 @@ img {
   color: #000;
   padding-top: 15px;
   margin-bottom: 20px;
-}
-
-.fieldset::before {
-  content: "";
+  border-top: 2px solid #000;
   width: 100%;
-  display: block;
-  background-color: #000;
-  height: 2px;
-  position: absolute;
-  top: 0px;
 }
 
 .fieldset li {
