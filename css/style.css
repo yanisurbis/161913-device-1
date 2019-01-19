@@ -1735,7 +1735,7 @@ img {
 
 .gmap_canvas {
   overflow: hidden;
-  background: none !important;
+  background: none;
   height: 559px;
   width: 960px;
 }
