@@ -258,11 +258,6 @@ img {
   align-items: center;
 }
 
-.hidden,
-.dn {
-  display: none;
-}
-
 /* header */
 
 .header {
