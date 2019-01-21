@@ -1312,7 +1312,7 @@ img {
   padding: 28px 0px;
 }
 
-.items-wrapper .title-price p {
+.title-price p {
   margin: 0;
   font-size: 16px;
   color: #464646;
@@ -1320,7 +1320,7 @@ img {
   line-height: 24px;
 }
 
-.items-wrapper .title-price a {
+.title-price a {
   color: #000;
   line-height: 25px;
   font-family: "GilroyBold", "Arial", sans-serif;
